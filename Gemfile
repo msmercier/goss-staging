@@ -13,14 +13,18 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # For HTML templates
 gem 'haml-rails', '~> 1.0.0'
 # For user accounts
 gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'master'
+# Foundation for frontend framework
+# gem 'foundation-rails'
+gem 'foundation-rails', '~> 6.3.1.0'
+gem 'autoprefixer-rails'
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '~> 4.1.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
