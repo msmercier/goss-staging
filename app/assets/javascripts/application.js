@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require foundation
 //= require rails-ujs
 //= require activestorage
+//= require home
+
 $(function(){ $(document).foundation(); });

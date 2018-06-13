@@ -1,2 +1,16 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(document).ready(function() {
+
+  // Burger menu open / close
+  $('#burger').on('click', function(){
+    $('.sidebar').velocity({ translateX: '0%' }, {
+      duration: 250,
+    });
+  });
+
+  $('.close-cross').on('click', function(){
+    $('.sidebar').velocity({translateX: '-100%' }, {
+      duration: 250,
+    });
+  });
+  
+});

@@ -2,23 +2,28 @@
 %html{ :lang => "en" }
   %head
     %meta{ :charset => "utf-8" }
-
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
-
-    %title= content_for?(:title) ? yield(:title) : "Untitled"
+    %title= content_for?(:title) ? yield(:title) : "Goss.com"
 
     = stylesheet_link_tag "application"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tag
 
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"}
+
   %body
-    %nav
-      = link_to "Home", root_path
-      - if current_user
-        = link_to "My Account", user_path(current_user.id)
-        = link_to "Log out", destroy_user_session_path, method: :delete
-      - else
-        = link_to "Sign in", new_user_session_path
-        = link_to "Sign up", new_user_registration_path
+    %nav.main-menu
+      %button.mobile-button.menu-icon#burger
+      .sidebar.hidden
+        %button.close-button
+          %span.close-cross{"aria-hidden" => "true"} ×
+        %ul.menu-links
+          %li= link_to "Home", root_path
+          - if current_user
+            %li= link_to "My Account", user_path(current_user.id)
+            %li= link_to "Log out", destroy_user_session_path, method: :delete
+          - else
+            %li= link_to "Sign in", new_user_session_path
+            %li= link_to "Sign up", new_user_registration_path
 
     = yield

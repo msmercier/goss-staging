@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   validates_presence_of :first_name, :last_name
 
+  # User balance has a default of 1.0
 end

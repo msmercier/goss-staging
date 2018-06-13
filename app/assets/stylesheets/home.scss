@@ -1,3 +1,55 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* BURGER MENU */
+
+.main-menu {
+
+  .menu-links {
+    list-style-type: none;
+    padding-top: 4rem;
+  }
+
+  .menu-icon {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 24px;
+  }
+
+  .menu-icon::after {
+    background: black;
+    box-shadow: 0 7px 0 black, 0 14px 0 black;
+  }
+
+  .menu-icon:hover::after {
+    background: #20FC8F;
+    box-shadow: 0 7px 0 #20FC8F, 0 14px 0 #20FC8F;
+  }
+
+  .sidebar.hidden {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .sidebar {
+    -webkit-transition: transform 0.5s cubic-bezier(.17,.67,.83,.67);
+    transition: transform 0.5s cubic-bezier(.17,.67,.83,.67);
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 10;
+    background-color: #20FC8F;
+  }
+
+  .close-button {
+    margin-top: .5rem;
+  }
+
+  .close-cross {
+    color: #22333B;
+    right: 1rem;
+    top: 1rem;
+  }
+}
