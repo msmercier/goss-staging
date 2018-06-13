@@ -1,4 +1,33 @@
-- if @user.username
-  %h3 Hi #{@user.username}
-- else
-  %h3 Hi #{@user.first_name}
+.user-show.page-template
+  .row
+    .small-12.columns
+      - if @user.username
+        %h2 Hi #{@user.username}
+      - else
+        %h2 Hi #{@user.first_name}
+
+  .row
+    .small-12.columns.balance
+      %h3 Balance
+      %h3 #{number_to_currency(@user.balance, :unit => "£")}
+      = link_to "Top Up", "#", :class => "button small"
+      = link_to "Withdraw", "#", :class => "button small"
+
+  .row
+    .small-12.columns.payment
+      %h4 Card Details
+      %i{:class => "fi-credit-card inline"}
+      %p.inline XXXX XXXX XXXX 4567
+      %br
+      = link_to "Edit", "#", :class => "button small"
+      = link_to "Remove", "#", :class => "button small"
+
+  .row
+    .small-12.columns.bets
+      %h4 View All Bets
+      = link_to "Show Bets", "#", :class => "button small"
+
+  .row
+    .small-12.columns.account-details
+      %h4 Edit Account Details
+      = link_to "Edit", edit_user_registration_path, :class => "button small"

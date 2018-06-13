@@ -20,9 +20,10 @@ gem 'haml-rails', '~> 1.0.0'
 # For user accounts
 gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'master'
 # Foundation for frontend framework
-# gem 'foundation-rails'
 gem 'foundation-rails', '~> 6.3.1'
 gem 'autoprefixer-rails'
+# Foundation icons
+gem 'foundation-icons-sass-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 4.1.1'
 

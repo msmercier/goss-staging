@@ -1,3 +1,39 @@
+/* HOME PAGE */
+
+.hero-section {
+  height: 14rem;
+  background-image: image-url("love_island.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  .hero-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    text-align: center;
+
+    h1 {
+      @include breakpoint(small only) {
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+      
+    }
+  }
+}
+
+.how-it-works {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: solid black 1px;
+}
+
+.bets {
+  text-align: center;
+  padding: 2rem 1rem;  
+}
+
 
 /* BURGER MENU */
 
@@ -6,6 +42,10 @@
   .menu-links {
     list-style-type: none;
     padding-top: 4rem;
+
+    li {
+      padding: .8rem 0rem;
+    }
   }
 
   .menu-icon {
@@ -41,10 +81,6 @@
     width: 80%;
     z-index: 10;
     background-color: #20FC8F;
-  }
-
-  .close-button {
-    margin-top: .5rem;
   }
 
   .close-cross {
