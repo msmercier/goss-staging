@@ -1,14 +1,15 @@
-.hero-section
-  .hero-text
-    %h1 This is goss.com
-    - unless current_user
-      %h3 Sign up to start betting
-      =link_to "Sign up", new_user_registration_path, class: "button small"
+.homepage
+  .hero-section
+    .hero-text
+      %h1 This is goss.com
+      - unless current_user
+        %h3 Sign up to start betting
+        =link_to "Sign up", new_user_registration_path, class: "button small"
 
-.how-it-works
-  %h1 How It Works
-  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  %p Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+  .how-it-works
+    %h1 How It Works
+    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    %p Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 
-.bets
-  %h1 Get Betting
+  .bets
+    %h1 Get Betting

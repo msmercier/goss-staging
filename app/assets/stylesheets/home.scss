@@ -1,39 +1,41 @@
 /* HOME PAGE */
 
-.hero-section {
-  height: 14rem;
-  background-image: image-url("love_island.jpg");
-  background-position: center;
-  background-size: cover;
-  color: #fff;
+.homepage {
 
-  .hero-text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); 
-    text-align: center;
+  .hero-section {
+    height: 14rem;
+    background-image: image-url("love_island.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
 
-    h1 {
-      @include breakpoint(small only) {
-        font-size: 2rem;
-        text-transform: uppercase;
+    .hero-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); 
+      text-align: center;
+
+      h1 {
+        @include breakpoint(small only) {
+          font-size: 2rem;
+          text-transform: uppercase;
+        }
+        
       }
-      
     }
   }
-}
 
-.how-it-works {
-  text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: solid black 1px;
-}
+  .how-it-works {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: solid black 1px;
+  }
 
-.bets {
-  text-align: center;
-  padding: 2rem 1rem;  
+  .bets {
+    text-align: center;
+    padding: 2rem 1rem;  
+  }
 }
-
 
 /* BURGER MENU */
 
