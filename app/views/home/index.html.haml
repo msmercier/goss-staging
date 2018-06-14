@@ -14,8 +14,8 @@
   .bets
     %h1 Get Betting
     - @bets.each do |bet|
-      = link_to bet_path(bet) do
-        %h2= bet.title
-        %h4= number_to_currency(bet.pot, :unit => "£")
-        %p= bet.end_time.strftime("%H:%M:%S | %a %d %b")
-        %p Bets placed : #{bet.user_bets.length}
+      %h2= bet.title
+      %h4= number_to_currency(bet.pot, :unit => "£")
+      %p= bet.end_time.strftime("%H:%M:%S | %a %d %b")
+      %p Bets placed : #{bet.user_bets.length}
+      = link_to "Make a bet", bet_path(bet), class: 'button small'

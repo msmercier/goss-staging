@@ -1,7 +1,22 @@
+@font-face {
+  font-family: 'letrista';
+  src:font-url('LetristaScript.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .page-template {
   margin-top: 2rem;
 }
 
 .inline {
   display: inline-block;
+}
+
+.button.small {
+  background-color: #40ffa1;
+}
+
+.button.small:hover {
+  background-color: #658cd3;
 }
