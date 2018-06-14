@@ -2,5 +2,6 @@
 class HomeController < ApplicationController
 
   def index 
+    @bets = Bet.where("end_time > ?", DateTime.now)
   end
 end
