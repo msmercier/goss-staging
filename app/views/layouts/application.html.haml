@@ -27,5 +27,8 @@
             %li= link_to "Sign up", new_user_registration_path
       = link_to root_path do
         %h1.logo Goss.com
+      - if current_user
+        .balance
+          %p 💳 #{number_to_currency(current_user.balance, :unit => "£")}
 
     = yield
