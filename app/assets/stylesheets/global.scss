@@ -14,9 +14,31 @@
 }
 
 .button.small {
-  background-color: #40ffa1;
+  background-color: #ff8995;
 }
 
 .button.small:hover {
   background-color: #658cd3;
+}
+
+a {
+  color: #ff8995;
+}
+
+a:hover {
+  color: #20FC8F;
+}
+
+h1, h2, h3, h4, p {
+  font-family: sans-serif, Arial;
+}
+
+h1, h3 {
+  color: #262626;
+  font-weight: 600;
+}
+
+p {
+  color: #6b6b6b;
+  font-weight: 500;
 }
