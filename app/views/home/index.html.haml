@@ -2,16 +2,21 @@
   .hero-section
     .hero-text
 
-  .how-it-works
-    %h1 How It Works
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    %p Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 
-  .bets
-    %h1 Get Betting
-    - @bets.each do |bet|
-      %h2= bet.title
-      %h4= number_to_currency(bet.pot, :unit => "£")
-      %p= bet.end_time.strftime("%H:%M:%S | %a %d %b")
-      %p Bets placed : #{bet.user_bets.length}
-      = link_to "Make a bet", bet_path(bet), class: 'button small'
+  .row.bets
+    .small-12.medium-7.columns.bets-container
+      = image_tag('top_image.png')
+      %h1 Emma next out? Bet here
+      %p 💰  £1,021   ⌛ 10 mins remaining
+    .small-12.medium-5.columns.bets-container
+      = image_tag('top_right.png')
+      %h3 Will Khloe Kardashian get engaged to that cheating dirtbag Tristan Thompson?
+      %p 💰  £5,211   ⌛ 2 weeks remaining
+    .small-12.medium-7.columns.bets-container
+      = image_tag('bottom_left.png')
+      %h1 Will the boys win the next task?
+      %p 💰  £1,021   ⌛ 10 mins remaining
+    .small-12.medium-5.columns.bets-container
+      = image_tag('bottom_right.png')
+      %h3 Will Caroline Flack quit Love Island?
+      %p 💰  £5,211   ⌛ 2 weeks remaining
