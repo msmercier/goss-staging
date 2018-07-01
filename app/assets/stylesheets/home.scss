@@ -3,13 +3,25 @@
 .homepage {
 
   .hero-section {
-    height: 14rem;
-    background-image: image-url("love_island.jpg");
+    height: 11rem;
+    background-image: image-url("banner_temp.png");
     background-position: center;
     background-size: cover;
     color: #fff;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+    @include breakpoint(medium only) {
+      height: 20rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    @include breakpoint(large up) {
+      height: 30rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
 
     .hero-text {
       position: relative;
@@ -35,7 +47,7 @@
 
   .bets {
     text-align: center;
-    padding: 2rem 1rem;  
+    padding: .4rem 1rem;  
 
     h1 {
       background-color: #f9ff8c;
@@ -77,8 +89,8 @@
   }
 
   .menu-icon::after {
-    background: black;
-    box-shadow: 0 7px 0 black, 0 14px 0 black;
+    background: #ff8995;
+    box-shadow: 0 7px 0 #ff8995, 0 14px 0 #ff8995;
   }
 
   .menu-icon:hover::after {
